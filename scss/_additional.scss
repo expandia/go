@@ -1,0 +1,40 @@
+.section--additional-hero {
+	padding: 5rem 0;
+}
+.additional__title {
+	@include bbb($color__green, c);
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.additional__sub {
+	color: $color__primary;
+	text-align: center;
+}
+.additional__body {
+	max-width: 30rem;
+	display: block;
+	margin: auto;
+}
+
+.block--looped {
+	margin-bottom: em(100px);
+	@include b(m) {
+		padding: 0 5%;	
+	}
+}
+
+.block__sub--c {
+	color: $color__primary;
+	text-align: center;
+}
+.block__title--c {
+	@include bbb($color__green, c);
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.block__content--c {
+	text-align: center;
+	max-width: 35rem;
+	display: block;
+	margin: auto;
+}

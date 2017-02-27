@@ -1,0 +1,212 @@
+// ---------------
+// Hero & Controls
+// ---------------
+.property-feed-hero__title {
+	color: $color__white;
+	max-width: 20rem;
+}
+.property-feed-hero__sub {
+	color: $color__white;
+	max-width: em(223px);
+}
+.property-feed__form {
+	padding: 4rem 2.5rem 3rem 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background: rgba(255,255,255,0.1);
+	max-width: em(360px);
+	@include b(m) {
+		margin-top: 2rem;
+	}
+}
+.property-feed__form-title {
+	max-width: 20rem;
+	margin-bottom: 2rem;
+}
+.property-feed__fieldset {
+	border: 0;
+	width: 100%;
+	margin-bottom: 1rem;
+	&--top {
+		margin-bottom: 1rem;
+	}
+}
+.property-feed__fieldset-divider {
+	display: inline-block;
+	flex-direction: column;
+	width: calc(50% - 0.5rem);
+	&:first-of-type {
+		margin-right: 0.5rem;
+	}
+}
+.property-feed__fieldset--small {
+	width: 50%;
+}
+.property-feed__label {
+	color: $color__white;
+	margin-bottom: em(4px);
+	display: block;
+}
+.property-feed__select-wrapper {
+	margin-right: 0.5rem;
+	width: calc(50% - 0.5rem);
+	display: inline-block;
+	position: relative;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	&:after {
+		content: url('img/cj__down-arrow.svg');
+		width: 0.3rem;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 1rem;
+	}
+}
+.property-feed__select-wrapper--large {
+	position: relative;
+	&:after {
+		content: url('img/cj__down-arrow.svg');
+		width: 0.3rem;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 1rem;
+	}
+}
+.property-feed__select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-size: em(12px);
+	font-weight: 500;
+	padding: 0.5rem 0.8rem;
+	color: $color__grey--dark;
+	font-family: $text__family--sans;
+	line-height: 1.2;
+	width: 100%;
+	height: 100%;
+}
+.property-feed__select--large {
+	width: 100%;
+}
+
+.property-feed__button-container {
+	display: flex;
+	flex-direction: column;
+
+}
+.property-feed__submit {
+	margin-top: 1.2rem;
+	margin-bottom: 1rem;
+}
+.property-feed__reset {
+	color: $color__white;
+	height: 100%;
+	font-family: $text__family--sans;
+	text-transform: uppercase;
+	@include lh(11, 11);
+	font-weight: 600;
+	padding-bottom: 2rem;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// ---------------
+// The Loop
+// ---------------
+.property-loop__container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: $color__grey--light;
+	padding: 3rem 0;
+	background-color: $color__white;
+}
+.property__looped {
+	max-width: 20rem;
+	background-color: $color__white;
+	border-radius: em(8px);
+	margin: 1rem 1rem;
+	box-shadow: 0px 0px 30px 6px rgba($color__blue, 0.1);
+	// To do - fix this shadow
+}
+.property-looped__top {
+	padding: 1rem;
+}
+.property-looped__img-container {
+	width: 100%;
+	height: 15rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.property-looped__img {
+	height: 100%;
+	width: auto;
+}
+.property-looped__title {
+	color: $color__green;
+	max-width: 16rem;
+}
+.property-looped__price {
+	@include lh(25,29);
+	margin-bottom: 0.5rem;
+}
+.property-looped__address-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 0.3rem;
+}
+.property-looped__address-icon {
+	margin-right: 0.3rem;
+}
+.property-looped__address {
+	color: $color__grey--dark;
+}
+.property-looped__info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 0.5rem;
+	p {
+		margin-bottom: 0;
+		margin-right: 0.3rem;
+		font-family: $text__family--sans;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		color: darken($color__grey--mid, 40%);
+		&:after {
+			content: '•';
+			margin-left: 0.3rem;
+		}
+		&:last-of-type {
+			margin-right: 0;
+			&:after {
+				content: '';
+			}
+		}
+	}
+}
+.property-looped__more {
+	background-color: $color__green;
+	width: 100%;
+	border-bottom-right-radius: em(8px);
+	border-bottom-left-radius: em(8px);
+	padding: 1rem;
+}
+.property-looped-more__title {
+	color: $color__white;
+	margin: 0;
+}

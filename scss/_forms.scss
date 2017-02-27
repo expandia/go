@@ -1,0 +1,13 @@
+.form__field {
+	background-color: $color__white;
+	
+	border: 0;
+	font-family: $text__family--sans;
+	@include lh(10.4, 12);
+	color: #676767;
+	font-style: italic;
+	padding: em(10px) em(20px);
+	margin-bottom: em(9px);
+	-webkit-appearance: none;
+	border-radius: 0;
+}

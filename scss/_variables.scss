@@ -1,0 +1,56 @@
+// Colors
+$color__green: #E8BE12;
+// Now yellow
+
+$color__blue: #192E4B;
+
+$color__white: #fff;
+
+// $color__grey: #949494;
+$color__grey--light: #F2F2F2;
+$color__grey--dark: #3D3D3D;
+$color__grey--mid: #F7F7F7;
+
+$color__primary: $color__blue;
+
+// Base Type
+$base__font-size--raw: 14;
+$base__font-size: $base__font-size--raw * 1px;
+$base__font-weight: 300;
+$base__line-height--sketch: 19;
+$base__line-height: $base__line-height--sketch / $base__font-size--raw;
+
+$base__color: $color__primary;
+
+// Site Size
+$site__width: 1024px;
+$gutter__width: 20px;
+
+// Font Families
+$text__family--sans: 'proxima-nova', sans-serif;
+$text__family--serif: 'PT Serif', serif;
+$text__family--base: 'Roboto Slab';
+$text__headings--family: $text__family--sans;
+
+// Headings Type
+$text__headings--weight: 800;
+$text__headings--color: $color--primary;
+$text__headings--capitalisation: uppercase;
+
+// Links
+$text__link--color: $color__primary;
+
+// Buttons
+$button--font-size: 12px;
+$button--text-color: $color__white;
+$button--font-weight: 500;
+$button--letter-spacing: normal;
+$button--font-family: $text__family--sans;
+$button--font-capitalisation: none;
+$button--line-height: 20px;
+
+$button--padding: 10px 30px;
+$button--border: 0;
+$button--border-radius: 2px;
+
+$button__background-color: $color__green;

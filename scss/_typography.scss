@@ -1,0 +1,83 @@
+// Defaults, no need to touch. Change in style.scss
+
+html {font-size: $base__font-size;}
+
+body {
+  font-family: $text__family--base;
+  font-weight: $base__font-weight;
+  line-height: $base__line-height;
+  color: $base__color;
+  background-color: #ecf0f1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: $text__headings--weight;
+  color: $text__headings--color;
+  text-transform: $text__headings--capitalisation;
+  font-family: $text__headings--family;
+}
+
+
+div h1:first-child,
+div h2:first-child, 
+div h3:first-child, 
+div h4:first-child, 
+div h5:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: $text__link--color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+// PASTE BELOW FROM TYPESCALE - html and body styles go in style.scss, don't touch the above.
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1.414rem 0 0.5rem;
+}
+
+h1 {
+  margin-top: 0;
+  @include lh(44, 52);
+}
+
+h2 {
+  @include lh(33, 39);
+}
+
+h3 {
+  @include lh(25, 29);
+}
+
+h4 {
+  @include lh(19, 22);
+}
+
+h5 { @include lh(14, 17); }
+
+.small // Remove .font_small
+  {font-size: 12 / $base__font-size--raw * 1rem;}
+
+
+// RESETS
+
+address {
+  font-style: normal;
+}
+
+* {
+  font: inherit;
+}

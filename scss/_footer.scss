@@ -1,0 +1,130 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: $color__primary;
+	padding: em(55px) 0 0 0;
+	border-top: em(5px) solid $color__green;
+}
+.footer__top {
+	display: flex;
+	align-items: space-between;
+	justify-content: space-between;
+	width: 50rem;
+	@include b(s) {
+		width: 100%;
+	}
+	@include b(s) {
+		flex-direction: column;
+	}
+}
+.footer__left {
+	@include b(m) {
+		margin-bottom: 2rem;
+	}
+}
+.footer__right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include b(s) {
+		flex-direction: column;
+	}
+}
+.footer__title {
+	color: $color__white;
+	@include b(s) {
+		margin-bottom: 0;
+	}
+}
+.footer__address {
+	color: $color__white;
+}
+.footer__left {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	@include b(s) {
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+}
+.footer__column--first {
+	margin-right: 2rem;
+	@include b(s) {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+}
+.footer__social-icons-container {
+	@include b(s) {
+		margin-top: 2rem;
+	}
+}
+.footer__social-icon {
+	width: 2rem;
+	height: 2rem;
+	@include b(s) {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+.footer__logo {
+	width: em(200px);
+}
+.footer__link {
+	text-decoration: none;
+	color: $color__white;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.footer__title, .footer__address  {
+	@include b(s) {
+		text-align: center;
+	}
+}
+.footer__link {
+	@include b(s) {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+// Footer banner
+.footer__banner {
+	display: flex;
+	@include b(m) {
+		display: block;
+	}
+	background: $color__white;
+	margin-top: 4rem;
+	width: 100%;
+	border-top: em(5px) solid $color__green;
+	padding: 1rem 5%;
+	justify-content: space-between;
+}
+.footer__copyright {
+	margin-right: 2rem;
+	margin-bottom: 0;
+	@include lh(12,12);
+	@include b(m) {
+		text-align: center;
+		display: block;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+}
+.footer__made-by {
+	@include lh(12,12);
+	@include b(m) {
+		text-align: center;
+		display: block;
+		margin: auto;
+	}
+}
+.footer__made-by-span {
+	font-weight: 900;
+}

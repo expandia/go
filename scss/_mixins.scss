@@ -1,0 +1,74 @@
+// breakpoints
+$breakpoints: (
+	's'  : '(max-width: 745px)',
+	'm'  : '(max-width: 980px)',
+	'r'  : '(max-width:' $site__width')'
+);
+
+@mixin b($point) {
+
+	$query: map-get($breakpoints, $point);
+
+	@media #{$query} {
+		@content;
+	}
+}
+
+
+// em converter
+@function em($px, $base: $base__font-size) {
+	@return ($px / $base) * 1rem;
+}
+
+@mixin offset($offset){
+	margin-left: $offset * 80px;
+}
+
+// Spans
+@mixin span($span) {
+	width: 8.333% * $span;
+	@include b(m) {
+			display: block;
+			width: 100%;
+		}
+}
+
+// Circle
+@mixin circle($width, $height: $width) {
+		margin: auto;
+		width: $width;
+		height: $width;
+		border-radius: 100%;
+		background-size: cover;
+}
+
+// Line Height Converter
+@mixin lh($fz, $lh) {
+	font-size: ($fz / $base__font-size--raw) * 1rem;
+	line-height: $lh / $fz;
+}
+
+
+// Blue Border Bottom
+@mixin bbb($bg: inherit, $lr: left) {	
+	margin-top: 0;
+	margin-bottom: em(13px);
+	color: $bg;
+	&:after {
+		content: "";
+		margin-top: em(13px);
+		width: em(13px);
+		height: em(5px);
+		display: block;
+		background-color: $color__primary;
+		@if $lr == c {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	@if $lr == r {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,237 @@
+// Top
+.single-property__top {
+	background: url('img/cj__hero-bg.jpg') no-repeat center center scroll;
+	background-size: cover;
+}
+.single-property__top-container {
+	display: flex;
+	padding: 5rem 0;
+	align-items: center;
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	@include b(m) {
+		flex-wrap: wrap;
+		padding: 0 0 5rem 0;
+	}
+}
+
+.single-property-top__left {
+	width: 50%;
+	@include b(m) {
+		width: 100%;
+		margin-bottom: 3rem;
+		padding-right: 0;
+	}
+	padding-right: 1rem;
+	position: relative;
+	&:hover > span {
+		opacity: 1;
+		animation: fadeIn 0.3s ease-in-out;
+	}
+}
+.single-property-top__img {
+	width: 100%;
+	margin-left: auto;
+	display: block;
+	box-shadow: 0 0 30px 30px rgba(darken($color__blue, 15%), 0.1)
+}
+.single-property-top__arrow {
+	opacity: 0;
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba($color__white, 0.6);
+	padding: 1rem;
+	&--left {
+		left: 0;
+	}
+	&--right {
+		right: 1rem;
+	}
+	@include b(m) {
+		display: none;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.single-property-top__right {
+	width: 50%;
+	@include b(m) {
+		width: 100%;
+	}
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+.single-property__title {
+	@include bbb($color__green, l);
+	&:after {
+		background-color: $color__white;
+	}
+	max-width: 25rem;
+}
+.single-property__sub {
+	text-align: center;
+	color: $color__white;
+}
+.single-property-top-right__date, .single-property__info, .single-property-top__address, .single-property-top__price {
+	color: $color__white;
+}
+
+.single-property__info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 0.5rem;
+	p {
+		margin-bottom: 0;
+		margin-right: 0.3rem;
+		font-family: $text__family--sans;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		&:after {
+			content: '•';
+			margin-left: 0.3rem;
+		}
+		&:last-of-type {
+			margin-right: 0;
+			&:after {
+				content: '';
+			}
+		}
+	}
+}
+.single-property-top__price {
+	margin-top: 0;
+	margin-bottom: 1.8rem;
+}
+
+// Bottom
+.single-property__bottom {
+	padding: 6rem 0;
+	background-color: $color__grey--mid;
+	@include b(m) {
+		padding: 6rem 1rem;
+	}
+}
+.single-property-bottom__container {
+	display: flex;
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	@include b(m) {
+		flex-wrap: wrap;
+	}
+}
+
+.single-property-bottom__left {
+	width: 65%;
+	@include b(m) {
+		width: 100%;
+		padding-right: 0;
+	}
+	padding-right: 1rem;
+}
+.single-property-bottom__long-description {
+	max-width: 40rem;
+}
+
+
+.single-property-bottom__right {
+	width: 35%;
+	@include b(m) {
+		width: 100%;
+		padding-left: 0;
+	}
+	padding-left: 1rem;
+}
+.single-property-bottom__title {
+	@include bbb($color__green, l);
+}
+
+.single-property-bottom-right__title {
+	@include bbb($color__green, l);
+	&:after {
+		margin-bottom: 1.5rem;
+	}
+}
+.single-property-bottom-right__feature {
+	&:before {
+		content: '✓ ';
+
+	}
+}
+
+// Related
+.single-property__related-container {
+	padding: 8rem 0;
+}
+.single-property-related__sub {
+	text-align: center;
+}
+.single-property-related__title {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	@include bbb($color__green, c);
+}
+.single-property-related__loop-container {
+	padding: 0 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+// Booking Form
+.booking-form__title {
+	color: $color__green;
+	@include bbb($color__green, c);
+	&:after {
+		background-color: $color__white;
+	}
+	margin-bottom: 1.5rem;
+}
+.booking-form__sub {
+	color: $color__white;
+	text-align: center;
+}
+.booking-form {
+	background-color: rgba($color__blue, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.booking-form__form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.booking-form__input {
+	width: 20rem;
+}
+.booking-form__submit {
+	margin-top: 1rem;
+}
+.booking-form__closer {
+	color: rgba($color__white, 0.4);
+	cursor: pointer;
+}

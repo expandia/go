@@ -1,0 +1,99 @@
+// Imports
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'layout';
+@import 'home';
+@import 'buttons';
+@import 'nav';
+@import 'footer';
+@import 'slider';
+@import 'side-menu';
+@import 'shame';
+@import 'contact';
+@import 'forms';
+@import 'additional';
+@import 'landlords';
+@import 'about';
+@import 'properties-feed';
+@import 'properties-single';
+
+// To Do: Research this...
+img {
+	max-width: 100%;
+}
+
+// Temp boodge for pages with default template
+.page__title {
+	text-align: center;
+	padding: 10rem 0;
+}
+
+b {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.more {
+	@include lh(16, 18);
+	font-weight: $text__headings--weight;
+	font-family: $text__family--sans;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:after {
+		content: url('./img/triangle.svg');
+		margin-left: 0.5rem;
+	}
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	box-shadow: 0px 9px 26px -7px $color__grey--dark;
+}
+
+.news__container--blog {
+	flex-wrap: wrap;
+}
+.small-none {
+	@include b(m) {
+		display: none;
+	}
+}
+
+// Single post
+article {
+	display: block;
+	margin: auto;
+	max-width: em(700px);
+	padding: em(100px) 5%;
+}
+.wp-post-image {
+	margin: 3rem auto;
+	display: block;
+}
+
+.property {
+	padding: 5rem 10%;
+	border: 1px solid black;
+}
+
+
+.hidden {
+	display: none;
+}
+.visible {
+	display: flex;
+}

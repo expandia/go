@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="397px" height="101px" viewBox="0 0 397 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>cj__values</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300">
+        <g id="cj__values" transform="translate(0.000000, -9.000000)" fill="#192E4B">
+            <text id="Service" font-size="33">
+                <tspan x="49.4628099" y="35">Service</tspan>
+            </text>
+            <text id="Honesty" font-size="33">
+                <tspan x="218.735537" y="101.060606">Honesty</tspan>
+            </text>
+            <text id="Aspiration" font-size="34.1">
+                <tspan x="91.231405" y="67.9292929">Aspiration</tspan>
+            </text>
+            <text id="Quality" font-size="25.3">
+                <tspan x="217.636364" y="39.1111111">Quality</tspan>
+            </text>
+            <text id="Knowledge" font-size="25.3">
+                <tspan x="266" y="68.8383838">Knowledge</tspan>
+            </text>
+            <text id="Communication" font-size="25.3">
+                <tspan x="10.9917355" y="94.1616162">Communication</tspan>
+            </text>
+            <text id="Advice" font-size="25.3">
+                <tspan x="0" y="64.4343434">Advice</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

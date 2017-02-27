@@ -1,0 +1,19 @@
+.button--primary, .form__submit {
+	background: $button__background-color;
+	border-radius: $button--border-radius;
+	color: $button--text-color;
+	font-weight: $button--font-weight;
+	letter-spacing: $button--letter-spacing;
+	line-height: $button--line-height;
+	font-size: $button--font-size;
+	padding: $button--padding;
+	border: $button--border;
+	font-family: $button--font-family;
+	text-transform: $button--font-capitalisation;
+	display: block;
+	-webkit-appearance: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}

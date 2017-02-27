@@ -1,0 +1,34 @@
+.contact__header {
+	padding: 4rem 5% 2rem 5%;
+}
+.contact__sub {
+	color: $color__primary;
+	margin-bottom: em(2px);
+	font-weight: 700;
+	text-align: center;
+}
+.contact__page-title {
+	@include bbb($color__green, c);
+	text-align: center;
+}
+.contact__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5% em(100px) 5%;
+	flex-direction: column;
+}
+.contact__left {
+	margin-bottom: 3rem;
+}
+.contact__title {
+	text-align: center;
+}
+.contact__address {
+	text-align: center;
+}
+.contact__link {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
